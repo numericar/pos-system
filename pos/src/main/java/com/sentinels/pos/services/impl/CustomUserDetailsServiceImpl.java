@@ -14,6 +14,10 @@ import org.springframework.stereotype.Service;
 import com.sentinels.pos.entities.User;
 import com.sentinels.pos.repositories.UserRepository;
 
+/*
+    เมื่อเราทำการ implements UserDetailsService แล้ว 
+    ระบบสร้าง user อัตโนมัติของ spring จะถูกปิดใช้งาน เนื่องจาก เราจะจัดการ user เองแล้ว
+ */
 @Service
 public class CustomUserDetailsServiceImpl implements UserDetailsService {
 

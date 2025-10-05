@@ -38,6 +38,9 @@ public class User {
 	
 	@Column(name = "password", length = 100, nullable = false)
 	private String password;
+
+	@Column(name = "phone", length = 10, nullable = false)
+	private String phone;
 	
 	@Enumerated(EnumType.STRING)
 	@Column(name = "role", nullable = false)
